@@ -18,7 +18,7 @@
       },
       "root": "",
       "sourceRoot": "src",
-      "prefix": "app",
+      "prefix": "lgto",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
@@ -78,7 +78,8 @@
               "browserTarget": "legato-frontend-angular:build:production"
             },
             "development": {
-              "browserTarget": "legato-frontend-angular:build:development"
+              "browserTarget": "legato-frontend-angular:build:development",
+              "port": 5002
             }
           },
           "defaultConfiguration": "development"
