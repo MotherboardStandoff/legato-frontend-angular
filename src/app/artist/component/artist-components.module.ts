@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ArtistTableComponent } from '../../component/artist-table/artist-table.component';
+import { ArtistTableComponent } from './artist-table/artist-table.component';
+import { AngularMaterialModule } from 'src/app/shared/module/angular-material/angular-material.module';
 
 
 
@@ -9,7 +10,8 @@ import { ArtistTableComponent } from '../../component/artist-table/artist-table.
     ArtistTableComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    AngularMaterialModule
   ],
   exports: [
     ArtistTableComponent

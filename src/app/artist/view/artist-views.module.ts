@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ArtistsOverviewComponent } from '../../view/artist/artists-overview/artists-overview.component';
+import { ArtistsOverviewComponent } from './artists-overview/artists-overview.component';
+import { ArtistComponentsModule } from '../component/artist-components.module';
 
 
 
@@ -9,7 +10,8 @@ import { ArtistsOverviewComponent } from '../../view/artist/artists-overview/art
     ArtistsOverviewComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    ArtistComponentsModule
   ],
   exports: [
     ArtistsOverviewComponent
