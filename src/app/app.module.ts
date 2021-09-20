@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AngularMaterialModule } from './shared/module/angular-material/angular-material.module';
+import { ArtistModule } from './artist/artist.module';
 
 @NgModule({
   declarations: [
@@ -12,10 +13,11 @@ import { AngularMaterialModule } from './shared/module/angular-material/angular-
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
+    AngularMaterialModule,
+    ArtistModule,    
     // import site modules with routing before AppRoutingModule
     AppRoutingModule,
-    BrowserAnimationsModule,
-    AngularMaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
