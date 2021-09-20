@@ -7,12 +7,14 @@ import { ArtistsOverviewComponent } from './view/artist/artists-overview/artists
 import { AngularMaterialModule } from '../shared/module/angular-material/angular-material.module';
 import { ArtistComponentsModule } from './module/artist-components/artist-components.module';
 import { ArtistViewsModule } from './module/artist-views/artist-views.module';
+import { ArtistComponent } from './artist.component';
 
 
 @NgModule({
   declarations: [
     ArtistTableComponent,
-    ArtistsOverviewComponent
+    ArtistsOverviewComponent,
+    ArtistComponent
   ],
   imports: [
     CommonModule,
