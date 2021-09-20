@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { HttpClientModule } from '@angular/common/http'
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -14,9 +14,10 @@ import { ArtistModule } from './artist/artist.module';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    HttpClientModule,
     AngularMaterialModule,
-    ArtistModule,    
-    // import site modules with routing before AppRoutingModule
+    ArtistModule,
+    // import site modules with child routing before AppRoutingModule
     AppRoutingModule,
   ],
   providers: [],
