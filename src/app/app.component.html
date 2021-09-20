@@ -1,2 +1,8 @@
-<h1>Welcome to {{title}}</h1>
-<router-outlet></router-outlet>
+<mat-sidenav-container class="sideNav-container">
+    <mat-sidenav [opened]='sideNavOpened()' [mode]='sideNavMode()' class="sideNav">
+        <h2 class="sideNav-title">{{title}}</h2>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
+</mat-sidenav-container>

@@ -12,8 +12,8 @@
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
-$legato-frontend-angular-primary: mat.define-palette(mat.$indigo-palette);
-$legato-frontend-angular-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
+$legato-frontend-angular-primary: mat.define-palette(mat.$grey-palette, 600, 400, 800);
+$legato-frontend-angular-accent: mat.define-palette(mat.$pink-palette, 600, 300, 900);
 
 // The warn palette is optional (defaults to red).
 $legato-frontend-angular-warn: mat.define-palette(mat.$red-palette);
@@ -38,7 +38,12 @@ $legato-frontend-angular-theme: mat.define-light-theme((
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background-color: #ddd;}
 
-.container {
+.container, .container-reversed {
+  padding: 8px 8px;
   display: flex;
-  align-items: center;
+}
+
+.container-reversed {
+  
+  flex-direction: row-reverse;
 }

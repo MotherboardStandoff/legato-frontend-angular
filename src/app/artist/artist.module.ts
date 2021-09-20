@@ -6,6 +6,7 @@ import { AngularMaterialModule } from '../shared/module/angular-material/angular
 import { ArtistComponentsModule } from './component/artist-components.module';
 import { ArtistViewsModule } from './view/artist-views.module';
 import { ArtistComponent } from './artist.component';
+import { SharedComponentsModule } from '../shared/components/shared-components.module';
 
 
 @NgModule({
@@ -14,7 +15,7 @@ import { ArtistComponent } from './artist.component';
   ],
   imports: [
     CommonModule,
-    AngularMaterialModule,
+    SharedComponentsModule,
     ArtistRoutingModule
   ],
   exports: []

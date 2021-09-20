@@ -1,0 +1,13 @@
+@use '@angular/material' as mat;
+@use '/src/styles.scss' as main;
+
+.header-container {
+    width: 100%;
+    background-color: mat.get-color-from-palette(main.$legato-frontend-angular-primary, 'default');
+    color: mat.get-color-from-palette(main.$legato-frontend-angular-primary, 'default-contrast');
+    padding: 16px 16px;
+}
+
+.header-title {
+    text-align: center;
+}
