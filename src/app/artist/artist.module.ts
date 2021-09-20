@@ -5,6 +5,8 @@ import { ArtistRoutingModule } from './artist-routing.module';
 import { ArtistTableComponent } from './component/artist-table/artist-table.component';
 import { ArtistsOverviewComponent } from './view/artist/artists-overview/artists-overview.component';
 import { AngularMaterialModule } from '../shared/module/angular-material/angular-material.module';
+import { ArtistComponentsModule } from './module/artist-components/artist-components.module';
+import { ArtistViewsModule } from './module/artist-views/artist-views.module';
 
 
 @NgModule({
@@ -15,7 +17,9 @@ import { AngularMaterialModule } from '../shared/module/angular-material/angular
   imports: [
     CommonModule,
     AngularMaterialModule,
-    ArtistRoutingModule
+    ArtistRoutingModule,    
+    ArtistComponentsModule,
+    ArtistViewsModule
   ],
   exports: [
     ArtistTableComponent,
