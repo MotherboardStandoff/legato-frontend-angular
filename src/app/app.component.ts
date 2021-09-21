@@ -1,5 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { MatSidenav } from '@angular/material/sidenav';
 import { MatDrawerMode } from '@angular/material/sidenav/drawer';
+import { INavLink } from './shared/interface/iNav-link';
 
 @Component({
   selector: 'app-root',
@@ -7,21 +9,8 @@ import { MatDrawerMode } from '@angular/material/sidenav/drawer';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+
   public title: string = 'Legato';
 
-  private readonly _MIN_WIDTH: number = 1024;
-
   constructor() { }
-
-  public sideNavMode(): MatDrawerMode {
-    if (window.innerWidth < this._MIN_WIDTH) return 'over';
-
-    return 'side';
-  }
-
-  public sideNavOpened(): boolean {
-    if (window.innerWidth >= this._MIN_WIDTH) return true;
-
-    return false;
-  }
 }

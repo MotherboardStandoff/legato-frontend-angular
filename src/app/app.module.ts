@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AngularMaterialModule } from './shared/module/angular-material/angular-material.module';
 import { ArtistModule } from './artist/artist.module';
+import { ArtistViewsModule } from './artist/view/artist-views.module';
 
 @NgModule({
   declarations: [
@@ -16,9 +17,9 @@ import { ArtistModule } from './artist/artist.module';
     BrowserAnimationsModule,
     HttpClientModule,
     AngularMaterialModule,
-    ArtistModule,
+    ArtistViewsModule,
     // import site modules with child routing before AppRoutingModule
-    AppRoutingModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

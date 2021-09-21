@@ -1,6 +1,6 @@
-<div class="container-reversed">
-    <button mat-flat-button color='accent'>New Artist</button>
-</div>
 <div class="container">
-    <lgto-artist-table [dataSource]='artists' [displayedColumns]='columns'></lgto-artist-table>
+    <div class="button-container">
+        <button mat-flat-button color='accent'>New Artist</button>
+    </div>
+    <lgto-artist-table [dataSource]='artists' [displayedColumns]='columns' class="artist-table"></lgto-artist-table>
 </div>

@@ -11,6 +11,8 @@ export class ArtistTableComponent implements OnInit {
   @Input('dataSource') public artists: Artist[] = [];
   @Input('displayedColumns') public displayedColumns: string[] = ['id', 'name', 'createdAt', 'updatedAt'];
 
+  public readonly DATE_FORMAT:string = 'dd-MM-y HH:mm:ss zzzz';
+
   constructor() { }
 
   ngOnInit(): void {

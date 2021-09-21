@@ -1,4 +1,4 @@
-<table mat-table [dataSource]='artists' class="lgto-artist-table">
+<table mat-table [dataSource]='artists' class="artist-table">
 
     <ng-container matColumnDef="id">
         <th mat-header-cell *matHeaderCellDef> ID </th>
@@ -11,13 +11,13 @@
     </ng-container>
 
     <ng-container matColumnDef="createdAt">
-        <th mat-header-cell *matHeaderCellDef> Create Date </th>
-        <td mat-cell *matCellDef="let artist"> {{artist.createdAt}} </td>
+        <th mat-header-cell *matHeaderCellDef> Created </th>
+        <td mat-cell *matCellDef="let artist"> {{artist.createdAt | date:DATE_FORMAT}} </td>
     </ng-container>
 
     <ng-container matColumnDef="updatedAt">
-        <th mat-header-cell *matHeaderCellDef> Update Date </th>
-        <td mat-cell *matCellDef="let artist"> {{artist.updatedAt}} </td>
+        <th mat-header-cell *matHeaderCellDef> Updated </th>
+        <td mat-cell *matCellDef="let artist"> {{artist.updatedAt | date:DATE_FORMAT}} </td>
     </ng-container>
 
     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>

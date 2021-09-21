@@ -10,7 +10,7 @@ import { ArtistHttpService } from '../../service/artist-http.service';
 export class ArtistsOverviewComponent implements OnInit {
 
   public artists: Artist[] = [];
-  public columns:string[] = ['name'];
+  public columns:string[] = ['name', 'createdAt', 'updatedAt'];
 
   constructor(private _artistHttpService: ArtistHttpService) { }
 

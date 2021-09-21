@@ -35,15 +35,19 @@ $legato-frontend-angular-theme: mat.define-light-theme((
 
 /* You can add global styles to this file, and also import other style files */
 
+$default-padding: 8px;
+$default-container-side-padding: 12%;
+
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background-color: #ddd;}
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background-color: #eee;}
 
-.container, .container-reversed {
-  padding: 8px 8px;
-  display: flex;
-}
+.container {
 
-.container-reversed {
-  
-  flex-direction: row-reverse;
+  padding-top: $default-padding;
+  padding-bottom: $default-padding;
+
+  @media screen and (min-width: 1024px) {
+    padding-left: $default-container-side-padding;
+    padding-right: $default-container-side-padding;
+  }
 }

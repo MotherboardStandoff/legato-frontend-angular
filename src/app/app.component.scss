@@ -1,20 +1,8 @@
 @use '~@angular/material' as mat;
 @use '../styles.scss' as main;
 
-.sideNav-title {
-
-    text-align: center;
-}
-
-.sideNav-container {
-
-    background-color: #ddd;
-    height: 100%;
-}
-
-.sideNav {
+.toolbar {
 
     background-color: mat.get-color-from-palette(main.$legato-frontend-angular-primary, 'darker');
     color: mat.get-color-from-palette(main.$legato-frontend-angular-primary, 'darker-contrast');
-    width: 300px;
 }

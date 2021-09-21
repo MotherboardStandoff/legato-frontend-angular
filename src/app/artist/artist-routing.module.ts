@@ -3,14 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { ArtistComponent } from './artist.component';
 import { ArtistsOverviewComponent } from './view/artists-overview/artists-overview.component';
 
-const routes: Routes = [
-  {
-    path: 'artists', component: ArtistComponent, children: [
-      { path: 'overview', component: ArtistsOverviewComponent },
-      { path: '**', redirectTo: 'overview', pathMatch: 'full' }
-    ]
-  }
-];
+const routes: Routes = [];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
