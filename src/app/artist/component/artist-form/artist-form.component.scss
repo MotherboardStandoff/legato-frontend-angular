@@ -1,0 +1,16 @@
+.form {
+    margin: 8px 0px;
+    padding: 8px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+
+    @media only screen and (min-width: 1024px){
+        width: 25%;        
+    }
+}
+
+.form-title {
+
+    text-align: center;
+}

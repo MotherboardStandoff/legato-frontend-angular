@@ -18,10 +18,6 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatSliderModule } from '@angular/material/slider';
 
 
-
-
-
-
 @NgModule({
   declarations: [],
   imports: [
