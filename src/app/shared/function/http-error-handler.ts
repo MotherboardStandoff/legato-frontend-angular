@@ -1,8 +1,7 @@
 import { HttpErrorResponse } from "@angular/common/http";
+import { Observable } from "rxjs";
 
-export function handleHttpError(err: HttpErrorResponse): string {
-
-    console.error(err);
+function getErrorText(err: HttpErrorResponse): string {
 
     switch (err.status) {
 
@@ -15,4 +14,11 @@ export function handleHttpError(err: HttpErrorResponse): string {
         default:
             return `An unkown error has occured.`
     }
+}
+
+export function handleHttpError(err: HttpErrorResponse): Observable<never> {
+
+    console.error(err);
+
+    throw getErrorText(err);
 }
