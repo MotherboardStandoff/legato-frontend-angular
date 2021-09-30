@@ -1,7 +1,4 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { MatSidenav } from '@angular/material/sidenav';
-import { MatDrawerMode } from '@angular/material/sidenav/drawer';
-import { INavLink } from './shared/interface/iNav-link';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',

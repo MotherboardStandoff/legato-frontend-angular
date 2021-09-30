@@ -2,7 +2,7 @@ import { HttpClient, HttpErrorResponse, HttpResponse } from '@angular/common/htt
 import { Injectable } from '@angular/core';
 import { Observable, throwError } from 'rxjs';
 import { catchError } from 'rxjs/operators';
-import { getErrorText, handleHttpError } from 'src/app/shared/function/http-error-handler';
+import { handleHttpError } from 'src/app/shared/function/http-error-handler';
 import { ICreateLibraryObject } from 'src/app/shared/interface/iCreate-library-object';
 import { environment } from 'src/environments/environment';
 import { Artist } from '../model/artist';

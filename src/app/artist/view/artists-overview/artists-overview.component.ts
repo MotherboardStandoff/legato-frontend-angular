@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Artist } from 'src/app/artist/model/artist';
+import { SiteSettings } from 'src/app/shared/settings/site-settings';
 import { ArtistHttpService } from '../../service/artist-http.service';
 
 @Component({

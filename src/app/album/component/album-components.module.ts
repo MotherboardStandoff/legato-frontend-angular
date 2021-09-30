@@ -1,20 +1,20 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { GenreTableComponent } from './genre-table/genre-table.component';
+import { AlbumTableComponent } from './album-table/album-table.component';
 import { AngularMaterialModule } from 'src/app/shared/module/angular-material/angular-material.module';
 
 
 
 @NgModule({
   declarations: [
-    GenreTableComponent
+    AlbumTableComponent
   ],
   imports: [
     CommonModule,
     AngularMaterialModule
   ],
   exports: [
-    GenreTableComponent
+    AlbumTableComponent
   ]
 })
-export class GenreComponentsModule { }
+export class AlbumComponentsModule { }

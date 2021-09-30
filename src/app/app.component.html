@@ -2,9 +2,13 @@
     <p>{{title}}</p>
 </mat-toolbar>
 <mat-tab-group color='accent'>
-    <mat-tab label='Albums'></mat-tab>
-    <mat-tab label='Artists'>        
+    <mat-tab label='Albums'>
+        <lgto-album-overview></lgto-album-overview>
+    </mat-tab>
+    <mat-tab label='Artists'>
         <lgto-artists-overview></lgto-artists-overview>
     </mat-tab>
-    <mat-tab label='Genres'></mat-tab>
+    <mat-tab label='Genres'>
+        <lgto-genre-overview></lgto-genre-overview>
+    </mat-tab>
 </mat-tab-group>

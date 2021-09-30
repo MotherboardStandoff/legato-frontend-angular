@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SiteSettings } from 'src/app/shared/settings/site-settings';
 
 @Component({
   selector: 'lgto-artist-form',
